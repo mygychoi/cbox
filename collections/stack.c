@@ -27,6 +27,7 @@ int main(void)
         num = pop();
         printf("%d", num);
     }
+    pop();
 
     return 0;
 }

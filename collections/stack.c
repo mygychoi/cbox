@@ -1,63 +1,25 @@
 #include <assert.h>
-#include <stdbool.h>
-#include <stdio.h>
 
-#define SIZE 10
+#include "stack.h"
 
-int nums[SIZE];
+#define MAX_SIZE 10
+
+int nums[MAX_SIZE];
 int top = -1;
 
-void make_empty(void);
-bool is_empty(void);
-bool is_full(void);
-void push(int num);
-int pop(void);
+void make_empty(void) { top = -1; }
 
-int main(void)
-{
-    make_empty();
-    int num = 1;
-    while (!is_full())
-    {
-        push(num);
-        num++;
-    }
-    while (!is_empty())
-    {
-        num = pop();
-        printf("%d", num);
-    }
-    pop();
+bool is_empty(void) { return top == -1; }
 
-    return 0;
+bool is_full(void) { return top == MAX_SIZE - 1; }
+
+void push(int num) {
+  assert(!is_full());
+  nums[++top] = num;
 }
 
-void make_empty(void)
-{
-    top = -1;
-}
+int pop(void) {
 
-bool is_empty(void)
-{
-    return top == -1;
-}
-
-bool is_full(void)
-{
-    return top == SIZE - 1;
-}
-
-void push(int num)
-{
-    assert(!is_full());
-    top++;
-    nums[top] = num;
-}
-
-int pop(void)
-{
-    assert(!is_empty());
-    int popped = nums[top];
-    top--;
-    return popped;
+  assert(!is_empty());
+  return nums[top--];
 }

@@ -8,7 +8,7 @@
 
 max_(int) max_(float)
 
-int main(void) {
+    int main(void) {
   PRINT_INT(max_int(1, 2));
   PRINT_FLOAT(max_float(1., 2.));
   return 0;

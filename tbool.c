@@ -1,12 +1,11 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
 
-    bool a = false;
-    a = true;
-    printf("%d", a ? true : false);
+  bool a = false;
+  a = true;
+  printf("%d", a ? true : false);
 
-    return 0;
+  return 0;
 }

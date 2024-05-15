@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-void size(int array[], int n) {
-    iter
-}
+void size(int array[], int n) { iter }
 
-
-int main(void) {
-    return 0;
-}
+int main(void) { return 0; }

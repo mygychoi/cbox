@@ -2,21 +2,18 @@
 
 #define BASE 10
 
-int main(void)
-{
-    int cnt = 1;
-    int num;
+int main(void) {
+  int cnt = 1;
+  int num;
 
-    scanf("%d", &num);
-    while (num >= BASE)
-    {
-        num /= BASE;
-        if (num != 0)
-        {
-            cnt++;
-        }
+  scanf("%d", &num);
+  while (num >= BASE) {
+    num /= BASE;
+    if (num != 0) {
+      cnt++;
     }
-    printf("%d %d", num, cnt);
+  }
+  printf("%d %d", num, cnt);
 
-    return 0;
+  return 0;
 }

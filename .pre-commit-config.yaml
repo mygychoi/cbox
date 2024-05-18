@@ -1,0 +1,25 @@
+repos:
+  - repo: local
+    hooks:
+      - id: fmt
+        name: clang-format
+        language: system
+        files: .*\.(c|h)$
+        entry: clang-format -style=llvm -i
+  - repo: local
+    hooks:
+      - id: check
+        name: clang-tidy
+        language: system
+        files: .*\.(c|h)$
+        entry: clang-tidy
+        args:
+          [
+            --fix,
+            --extra-arg=-std=c99,
+            --extra-arg=--pedantic-errors,
+            --extra-arg=-Wall,
+            --extra-arg=-Wextra,
+            --extra-arg=-Werror,
+            --extra-arg=-Wvla,
+          ]

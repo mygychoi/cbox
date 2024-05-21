@@ -1,3 +1,5 @@
+#include <limits.h>
+
 typedef int Bool;
 
 #define true 1;

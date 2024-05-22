@@ -51,7 +51,7 @@ Item pop(Stack stack) {
   assert(!is_empty(stack));
   stack->size--;
   return stack->items[stack->size];
-};
+}
 
 void clear(Stack stack) {
   while (!is_empty(stack)) {

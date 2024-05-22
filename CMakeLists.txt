@@ -6,10 +6,11 @@ project(Cbox VERSION 1.1)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED True)
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 add_executable(main main.c stack.c)
 add_executable(ex1 ex1.c)
+add_executable(test_vec collections/tests/test_vec.c collections/vec.c)
 
 target_compile_options(main PUBLIC --pedantic-errors PUBLIC -Wall PUBLIC -Wextra PUBLIC -Werror PUBLIC -Wvla)

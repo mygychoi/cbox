@@ -4,10 +4,10 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-typedef void* Item;
-typedef struct _Vector* Vector;
+typedef void *Item;
+typedef struct _Vector *Vector;
 
-#define unwarp(type, item) (*(type*)item)
+#define unwarp(type, item) (*(type *)item)
 
 Vector vec_init(void);
 Vector vec_initwithcapacity(const size_t capacity);

@@ -5,7 +5,7 @@ repos:
         name: clang-format
         language: system
         files: .*\.(c|h)$
-        entry: clang-format -style=llvm -i
+        entry: clang-format -i
   - repo: local
     hooks:
       - id: check

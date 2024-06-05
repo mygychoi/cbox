@@ -30,5 +30,8 @@ add_executable(ptr22 src/ptr/ptr22.c src/collections/matrix.c src/collections/vo
 add_executable(ptr23 src/ptr/ptr23.c src/collections/matrix.c)
 
 add_executable(str1 src/str/str1.c)
+add_executable(str2 src/str/str2.c)
+add_executable(str3 src/str/str3.c)
+add_executable(str src/str/str.c)
 
 target_compile_options(main PUBLIC --pedantic-errors PUBLIC -Wall PUBLIC -Wextra PUBLIC -Werror PUBLIC -Wvla)

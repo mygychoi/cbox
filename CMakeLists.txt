@@ -36,4 +36,6 @@ add_executable(str src/str/str.c)
 
 add_executable(struct src/struct.c)
 
+add_executable(cli src/cli.c)
+
 target_compile_options(main PUBLIC --pedantic-errors PUBLIC -Wall PUBLIC -Wextra PUBLIC -Werror PUBLIC -Wvla)

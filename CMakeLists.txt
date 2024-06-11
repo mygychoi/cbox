@@ -35,6 +35,7 @@ add_executable(str3 src/str/str3.c)
 add_executable(str src/str/str.c)
 
 add_executable(struct src/struct.c)
+add_executable(struct1 src/struct1.c)
 
 add_executable(cli src/cli.c)
 

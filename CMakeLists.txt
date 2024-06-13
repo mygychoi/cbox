@@ -40,5 +40,13 @@ add_executable(struct1 src/struct1.c)
 add_executable(cli src/cli.c)
 
 add_executable(io src/io.c)
+add_executable(io1 src/io1.c)
+add_executable(io2 src/io2.c)
+
+add_executable(copy src/copy.c)
+
+add_executable(jump src/jump.c)
+
+add_executable(dat src/dat.c)
 
 target_compile_options(main PUBLIC --pedantic-errors PUBLIC -Wall PUBLIC -Wextra PUBLIC -Werror PUBLIC -Wvla)
